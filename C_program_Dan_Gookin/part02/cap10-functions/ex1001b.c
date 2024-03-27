@@ -2,8 +2,14 @@
 
 /* function prototype */
 void prompt();  //void prompt(void);
+void busy();
 
 int main(){
+    busy();
+    return 0;
+}
+
+void busy(void){
     int loop;
     char input[32];
     loop = 0;
@@ -12,7 +18,6 @@ int main(){
         fgets(input, 32, stdin);
         loop++;
     }
-    return 0;
 }
 
 //a função não requer parâmetros, por isso é void
